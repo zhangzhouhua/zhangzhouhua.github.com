@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>翻转拼图游戏</title>
+    
+    
+    
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+     
+<html>
+<head>
+<meta charset="utf-8">
+<title>翻转拼图游戏</title>
+<script src="http://static.runoob.com/assets/vue/1.0.11/vue.min.js"></script>
+<script typet="text/javascript" src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+ 
+</head>
+<body id="app">
+  <h1>翻转拼图游戏</h1>
+  <button @click='showHelp'>玩法说明</button>
+  棋牌大小：{{sz}} x {{sz}}  {{sz*sz}}格
+  <button @click='toEasy'>降低难度</button>
+  <button @click='toHard'>提升难度</button>
+  <div style="background: #4d4d4d;">
+    <ul id="board">
+      <li v-for="skill in sz*sz" class='gird' @click='toggle($event)'></li>     
+    </ul>
+  </div>
+<!-- JavaScript 代码需要放在尾部（指定的HTML元素之后） -->
+ 
+</body>
+</html>
+    
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
